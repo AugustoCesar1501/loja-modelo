@@ -3,12 +3,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
+    width: 100vw;
+    height: auto;
     font-size: 16px;
     font-family: 'Roboto';
+    box-sizing: border-box;
+    overflow-x: hidden !important;
 }
 
 nav {
@@ -480,7 +483,7 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
-
+    
     nav {
         display: none;
     }
@@ -489,7 +492,10 @@ footer {
         width: 100vw;
         display: flex;
         justify-content: space-between;
-        position: fixed;
+        position: absolute;
+        top: 0;
+        z-index: 99;
+        background-color: #38383849;
     }
 
     .nav-mobile .nav-left {
@@ -631,8 +637,21 @@ footer {
     }
 
     .section-five .five-left ul {
-        width: 50%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+
+    .section-five .five-left ul li {
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    .section-five .five-left ul li p {
+        width: auto;
+        white-space: nowrap;
     }
 
     .section-six {
@@ -654,7 +673,7 @@ footer {
     }
 
     .section-six .form input {
-        width: 60%;
+        width: 80%;
         height: auto;
         padding: 1em;
     }

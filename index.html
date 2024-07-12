@@ -154,10 +154,9 @@
     var menu = document.getElementById('menu');
 
     const screenHeight = window.screen.height;
-    console.log(screenHeight)
+    const screenWidth = window.screen.width;
 
-    if (screenHeight <= 800) {
-        console.log('teste')
+    if (screenHeight <= 800 && screenWidth >= 900) {
         window.addEventListener("scroll", function (event) {
             if (window.pageYOffset > 150) {
 
@@ -168,6 +167,7 @@
                 nav.style.top = "-100%";
             }
         });
+
     }
 
     function toggleOpen() {
@@ -175,7 +175,7 @@
         console.log('asdasda')
     }
     function toggleClose() {
-        menu.style.top = '-100%'
+        menu.style.top = '-150%'
     }
 
 </script>
