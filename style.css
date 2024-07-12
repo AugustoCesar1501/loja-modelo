@@ -683,3 +683,10 @@ footer {
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .section-six {
+        height: 80vh;
+        margin: 0;
+    }
+}
