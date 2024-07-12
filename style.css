@@ -404,6 +404,22 @@ img:nth-child(5) {
     color: #383838;
 }
 
+.section-five .five-left button {
+    padding: .8em 2.5em .8em 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #383838;
+    border: 0;
+    color: #f4f4f4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.section-five .five-left button img {
+    width: 32px;
+}
+
 .section-five .five-right img {
     width: 600px;
 }
