@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja modelo</title>
+</head>
+
+<body>
+    <div class="nav-fundo" id="nav-fundo"></div>
+    <nav>
+        <div class="nav-left">
+            <h1>Loja modelo</h1>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li class="first-item">Página Principal</li>
+                <li>Loja</li>
+                <li class="traco"></li>
+                <li><img src="./img/search.svg" alt=""></li>
+                <li><img src="./img/shopping.svg" alt=""></li>
+                <li><img src="./img/person.svg" alt=""></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="nav-mobile">
+        <div class="nav-left">
+            <h1>Loja modelo</h1>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><img src="./img/shopping.svg" alt=""></li>
+                <li><img src="./img/menu.svg" alt="" onclick="toggleOpen()"></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="menu-lateral" id="menu">
+        <img src="./img/close.svg" alt="" onclick="toggleClose()">
+        <ul>
+            <li>Pagina inicial</li>
+            <li>Loja</li>
+            <li>Entrar</li>
+            <li>Pedidos</li>
+            <li>Minha conta</li>
+        </ul>
+    </div>
+    <section class="section-one">
+        <div class="fundo">
+            <h3>Bem vindo(a) a <br> Loja modelo</h3>
+            <div class="button-overtext">
+                <button>Comprar agora</button>
+            </div>
+        </div>
+    </section>
+    <section class="section-two">
+        <div class="sub-title">
+            <h3>Sobre nós</h3>
+        </div>
+        <div class="cards">
+            <div class="card card-left">
+                <div class="img"></div>
+                <h4>Gerar entusiasmo</h4>
+                <p>Quais são os fatos mais interessantes sobre a sua empresa? Conte aqui.</p>
+            </div>
+            <div class="card card-right">
+                <div class="img"></div>
+                <h4>Criar interesse</h4>
+                <p>Conte algo interessante sobre seu negócio aqui.</p>
+            </div>
+        </div>
+    </section>
+    <div class="sub-title">
+        <h3>Galeria de fotos</h3>
+    </div>
+    <section class="section-three">
+        <div class="pic-ctn">
+            <img src="./img/carrousel1.png" alt="" class="pic">
+            <img src="./img/carrousel2.png" alt="" class="pic">
+            <img src="./img/carrousel3.png" alt="" class="pic">
+            <img src="./img/carrousel4.png" alt="" class="pic">
+            <img src="./img/carrousel5.png" alt="" class="pic">
+        </div>
+    </section>
+    <section class="section-four">
+        <div class="section-four-fundo">
+            <h3>Avaliações</h3>
+            <div class="modelo">
+                <div class="photo"></div>
+                <div class="stars">
+                    <img src="./img/star.png" alt="">
+                    <img src="./img/star.png" alt="">
+                    <img src="./img/star.png" alt="">
+                    <img src="./img/star.png" alt="">
+                    <img src="./img/star.png" alt="">
+                </div>
+                <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel quidem omnis.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sub-title sub-contact">
+        <h3>Contato</h3>
+    </div>
+    <section class="section-five">
+
+        <div class="five-left">
+            <h4>Ou melhor, venha nos visitar.</h4>
+            <p>Nossos clientes são importantes para nós. Ficaríamos contentes em receber a sua visita durante nosso
+                horário comercial.</p>
+
+            <h3>Loja modelo</h3>
+            <h4>Horas</h4>
+            <ul>
+                <li>seg. <p>09:00 - 17:00</p>
+                </li>
+                <li>ter. <p>09:00 - 17:00</p>
+                </li>
+                <li>qua. <p>09:00 - 17:00</p>
+                </li>
+                <li>qui. <p>09:00 - 17:00</p>
+                </li>
+                <li>sex. <p>09:00 - 17:00</p>
+                </li>
+                <li>sab. <p>Fechado</p>
+                </li>
+                <li>dom. <p>Fechado</p>
+                </li>
+            </ul>
+        </div>
+        <div class="five-right">
+            <img src="./img/contato.png" alt="">
+        </div>
+    </section>
+    <section class="section-six">
+        <div class="form">
+            <p>Cadastrar</p>
+            <input type="text" placeholder="E-mail">
+            <button>Inscrever-se</button>
+        </div>
+        <p>Ganhe 10% de desconto em sua primeira compra ao se inscrever!</p>
+    </section>
+    <footer>
+        <p>Copyright © 2024 Loja modelo - Todos os direitos reservados.</p>
+        <p>Amalfi Tech Desenvolvimento Web</p>
+    </footer>
+
+
+</body>
+<script>
+    var nav = document.getElementById('nav-fundo');
+    var menu = document.getElementById('menu');
+
+    const screenWidth = window.screen.width;
+    if (screenWidth <= 800) {
+        window.addEventListener("scroll", function (event) {
+            if (window.pageYOffset > 150) {
+
+                nav.style.top = "0";
+
+            }
+            else {
+                nav.style.top = "-100%";
+            }
+        });
+    }
+
+    function toggleOpen() {
+        menu.style.right = '0'
+    }
+    function toggleClose() {
+        menu.style.right = '-100%'
+    }
+
+</script>
+
+</html>
