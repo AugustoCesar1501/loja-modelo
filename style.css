@@ -244,7 +244,7 @@ nav .nav-right ul img {
     position: relative;
     width: 100%;
     height: 300px;
-    margin-top: 15vh;
+    margin-top: 5vh;
 }
 
 .pic-ctn>img {
@@ -579,21 +579,31 @@ footer {
     }
 
     .section-two .cards {
-        padding-top: 2em;
+        padding-top: 1em;
         width: 100%;
         height: auto;
         flex-direction: column;
-        gap: 2em;
+        gap: 2.5em;
     }
 
     .section-two .cards .card {
         width: 80%;
+        height: auto;
         text-align: center;
+    }
+
+    .section-two .cards .card-left,
+    .section-two .cards .card-right {
+        padding-top: 0;
     }
 
     .section-two .cards .card .img {
         width: 100%;
     }
+
+    .pic-ctn {
+        height: 30vh;
+    } 
 
     .section-three {
         height: 40vh;
@@ -636,7 +646,7 @@ footer {
     .section-five .five-right {
         width: 90%;
         height: auto;
-        padding: 2em 0;
+        padding: 1em 0;
         display: flex;
         align-items: center;
     }
@@ -672,8 +682,7 @@ footer {
 
     .section-six {
         height: auto;
-        margin-top: 5vh;
-        padding: 2em 0;
+        padding: 1em 0;
     }
 
     .section-six .form {
@@ -721,7 +730,7 @@ footer {
 
 @media only screen and (max-width: 400px) {
     .section-six {
-        height: 80vh;
+        height: 60vh;
         margin: 0;
     }
 }
