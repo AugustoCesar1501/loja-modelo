@@ -636,12 +636,14 @@ footer {
     }
 
     .section-six {
-        height: 20vh;
+        height: auto;
         margin-top: 5vh;
+        padding: 2em 0;
     }
 
     .section-six .form {
         width: 90%;
+        height: auto;
         flex-direction: column;
         gap: 10px;
         align-items: center;
